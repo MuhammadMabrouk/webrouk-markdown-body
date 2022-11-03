@@ -1,0 +1,45 @@
+{
+  "name": "webrouk-markdown-body",
+  "version": "1.0.0",
+  "description": "Webrouk Markdown Body is a native JavaScript markdown-to-html web component to load and display an external MD file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadMabrouk/webrouk-markdown-body.git"
+  },
+  "keywords": [
+    "markdown",
+    "md",
+    "js",
+    "vanilla",
+    "vanilla-js",
+    "component",
+    "web-component",
+    "webrouk"
+  ],
+  "author": "Muhammad Mabrouk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuhammadMabrouk/webrouk-markdown-body/issues"
+  },
+  "homepage": "https://github.com/MuhammadMabrouk/webrouk-markdown-body#readme",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/stream": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-terser": "^2.1.0",
+    "merge-stream": "^2.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "highlight.js": "^11.6.0",
+    "marked": "^4.2.1"
+  }
+}

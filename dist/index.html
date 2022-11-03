@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webrouk Markdown Body Component</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- inline markdown code -->
+  <webrouk-markdown-body mode="light">
+    <script type="text/markdown">
+      - **item one**
+      - _item two_
+      - [x] item three
+      - [Google](https://www.google.com.eg/)
+      - [YouTube](https://www.youtube.com/)
+    </script>
+  </webrouk-markdown-body>
+
+  <br><br><hr><br><br>
+
+  <!-- external markdown file -->
+  <webrouk-markdown-body
+    src="https://raw.githubusercontent.com/twbs/bootstrap/main/README.md"
+    mode="dark">
+  </webrouk-markdown-body>
+
+  <!-- webrouk-markdown-body component file -->
+  <script src="webrouk-markdown-body.js"></script>
+</body>
+
+</html>
