@@ -1,6 +1,6 @@
 {
   "name": "webrouk-markdown-body",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webrouk Markdown Body is a native JavaScript markdown-to-html web component to load and display an external MD file.",
   "main": "index.js",
   "scripts": {

@@ -1288,8 +1288,8 @@ class WebroukMarkdownBody extends HTMLElement {
     this.shadowRoot.appendChild(webroukMarkdownBodyTemplate.content.cloneNode(true));
 
     this._markdownBody = this.shadowRoot.getElementById("markdown-body");
-    this._inlineScript = this.querySelector('script[type="text/markdown"]');
-    this._markdown = this._inlineScript && this._dedent(this._inlineScript.text);
+    this._inlineScript = this.querySelector("textarea");
+    this._markdown = this._inlineScript && this._dedent(this._inlineScript.value);
     this._src = this.getAttribute("src");
 
     // marked options

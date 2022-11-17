@@ -41,13 +41,13 @@ You can pass in your markdown inline too.
 
 ```html
 <webrouk-markdown-body mode="dark">
-  <script type="text/markdown">
+  <textarea>
     - **item one**
     - _item two_
     - [x] item three
-    - [Google](https://www.google.com.eg/)
+    - [Google](https://www.google.com/)
     - [YouTube](https://www.youtube.com/)
-  </script>
+  </textarea>
 </webrouk-markdown-body>
 ```
 
