@@ -33,6 +33,7 @@ Using webroukMarkdownBody is simple.
 | Option | Type | Description | Default |
 | ----------- |    :----:   | ----------- |    :----:   |
 | src | `url` &#124; `path` | Loads and displays an external MD file | `null` |
+| default | `# Hello World!` | Default message if there is no content | `null` |
 | mode | `light` &#124; `dark` | Chooses the color mode to be applied | `null` |
 
 ### Write markdown inline

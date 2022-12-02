@@ -1278,6 +1278,7 @@ webroukMarkdownBodyTemplate.innerHTML = `
 class WebroukMarkdownBody extends HTMLElement {
   _markdownBody;
   _inlineScript;
+  _default;
   _src;
   _markdown;
 
@@ -1291,6 +1292,7 @@ class WebroukMarkdownBody extends HTMLElement {
     this._inlineScript = this.querySelector("textarea");
     this._markdown = this._inlineScript && this._dedent(this._inlineScript.value);
     this._src = this.getAttribute("src");
+    this._default = this.getAttribute("default") || `# Hello World!`;
 
     // marked options
     marked.setOptions({
@@ -1314,7 +1316,7 @@ class WebroukMarkdownBody extends HTMLElement {
 
     } else {
       // return default message
-      this._markdownBody.innerHTML = marked.parse(`# Hello World!`);
+      this._markdownBody.innerHTML = marked.parse(this._default);
     }
   }
 
